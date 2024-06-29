@@ -1,3 +1,7 @@
+## Requirements
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
 ## Start and build the docker-compose file
 ```bash
 docker compose up
