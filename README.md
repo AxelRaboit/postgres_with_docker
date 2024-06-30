@@ -2,9 +2,14 @@
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
+## Stop postgresql from your machine to use the one from docker
+```bash
+sudo systemctl stop postgresql
+```
+
 ## Start and build the docker-compose file
 ```bash
-docker compose up
+docker compose up -d
 ```
 
 ## Connect to pgAdmin
@@ -23,5 +28,5 @@ docker inspect <container_id>
 - Click on the "Add New Server" button.
 - In Connection tab, fill in the IP address.
 - Username will be POSTGRES_USER and Password POSTGRES_PASSWORD
-- Database name will be POSTGRES_DB
+- Server name as you want
 - Click on "Save" button.
