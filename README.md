@@ -21,8 +21,10 @@ docker compose up -d
 docker container ls
 # Then get the container id of image postgres
 docker inspect <container_id>
-# Then get the IP address of the container (e.g. "IPAddress": "172.18.0.2")
+# Then get the IP address of the container (e.g. "IPAddress": "172.20.0.2")
 ```
+Normally, the IP address should be 172.20.0.2. because docker-compose file is configured to use 
+the subnet 172.20.0.0/24 and the postgres container is assigned the IP address 172.20.0.2.
 
 ## Create a new database
 - Click on the "Add New Server" button.
